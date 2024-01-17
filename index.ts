@@ -11,6 +11,6 @@ console.info("You have been served.");
 
 import { Database } from "bun:sqlite";
 
-const db = new Database("db.sql")
+const db = new Database("db.sqlite3")
 const query = db.query("select 'Bun' as runtime;");
 query.get();
